@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    .curds{
+        width: 80%;
+        margin: 10px auto;
+    }
+    .head{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    input{
+        border: none;
+        outline: none;
+        background-color: #e7e6e6;
+        padding: 0 5px;
+        height: 30px;
+        margin: 5px 0;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+    input:focus{
+        background-color: #cccaca;
+        transform: scale(1.06);
+    }
+    button{
+        color: white;
+        background-color: crimson;
+        border: none;
+        border-radius: 15px;
+        height: 30px;
+        transition: 0.5s;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(170, 39, 66);
+        letter-spacing: 1.5px;
+    }
+    .prices{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3px;
+        #total{
+            background-color: crimson;
+            color: white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+        #total::before{
+            content: "total: ";
+        }
+    }
+    .btnSearchs{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        button{
+            width: 45%;
+        }
+    }
+    #delAll{
+        margin: 20px 0;
+    }
+    table{
+        margin: 10px 0;
+        tr{
+            display: flex;
+            align-items: center;
+        }
+        tbody{
+            width: 100%;
+        }
+        th{
+            text-transform: capitalize;
+        }
+        th,td{
+            padding: 5px;
+        }
+    }
+}
